@@ -110,6 +110,8 @@ file = st.file_uploader("Choose a CSV file", type="csv")
 # Placeholder for displaying data table
 data_placeholder = st.empty()
 
+# Sum Placeholder for time
+sum_placeholder = st.empty()
 
 # ...
 
@@ -159,7 +161,7 @@ if file:
 
     # Display the sum of the "Dauer" column
     sum_dauer = round(data['Dauer'].sum(), 2)
-    st.subheader(f'**Dauer ingesamt (in h):** {sum_dauer}')
+    sum_placeholder.subheader(f'**Dauer ingesamt (in h):** {sum_dauer}')
 
     # Placeholder for displaying charts divided into three columns
     col_chart1, col_chart2, col_chart3 = st.columns(3)
