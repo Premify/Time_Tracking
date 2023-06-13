@@ -39,7 +39,7 @@ def perform_algorithms(data):
 
     # Map Projekt codes to full names
     project_mapping = {
-        "PLAN": "Planung & Admin & Doku",
+        "PLAN": "Admin & Doku & Planung",
         "AT": "Academy Tasks",
         "AV": "Academy Videos",
         "HT": "Helpdesk Tasks",
