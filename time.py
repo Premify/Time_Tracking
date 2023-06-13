@@ -6,7 +6,7 @@ from datetime import datetime
 
 st.set_page_config(
     page_title="Time Tracking",
-    page_icon="🧊",
+    page_icon="🕗",
     layout="wide"
 )
 
@@ -102,7 +102,7 @@ def perform_algorithms(data):
     return final_data
 
 # Title of the page
-st.title('CSV File Processor')
+st.title('My Time')
 
 # Upload CSV file
 file = st.file_uploader("Choose a CSV file", type="csv")
